@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class FileHandler {
 
     private final File covidFile = new File("11_noegletal_pr_region_pr_aldersgruppe.csv");
+    private ArrayList<Covid19Data> listeTilConsolPrint = loadCovidData();
 
     public ArrayList<Covid19Data> loadCovidData (){
         ArrayList<Covid19Data> covidData = new ArrayList();
@@ -38,6 +39,7 @@ public class FileHandler {
 
     }
 
-
-
+    public ArrayList<Covid19Data> getListeTilConsolPrint() {
+        return listeTilConsolPrint;
+    }
 }
