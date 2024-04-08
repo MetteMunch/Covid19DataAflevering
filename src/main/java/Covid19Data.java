@@ -30,4 +30,16 @@ public class Covid19Data {
                 ", Indlagte samlet: " + indlagteSamlet +
                 ", Dato: " + dato;
     }
+
+    public String getRegion() {
+        return region;
+    }
+
+    public String getAldersgruppe() {
+        return aldersgruppe;
+    }
+
+    public int getDøde() {
+        return døde;
+    }
 }
